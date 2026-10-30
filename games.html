@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الألعاب · Deutsch A1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>تعلّم الألمانية · A1</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="lessons.html">الدروس</a>
+    <a href="vocab.html">المفردات</a>
+    <a href="games.html" class="active" aria-current="page">الألعاب</a>
+  </nav>
+
+  <main>
+    <section id="vk-page">
+      <h2>الألعاب</h2>
+      <p>العب لتحفظ الكلمات: der/die/das، المطابقة، وتحدي 1 ضد 1.</p>
+      <div id="vk"></div>
+    </section>
+  </main>
+
+<script src="emoji.js"></script>
+<script>
+(function(){
+var VOCAB=[{"d":"null","a":"","r":"0","l":3,"c":"رقم","p":0,"e":"0","n":1},{"d":"eins","a":"","r":"1","l":3,"c":"رقم","p":0,"e":"1","n":1},{"d":"zwei","a":"","r":"2","l":3,"c":"رقم","p":0,"e":"2","n":1},{"d":"drei","a":"","r":"3","l":3,"c":"رقم","p":0,"e":"3","n":1},{"d":"vier","a":"","r":"4","l":3,"c":"رقم","p":0,"e":"4","n":1},{"d":"fünf","a":"","r":"5","l":3,"c":"رقم","p":0,"e":"5","n":1},{"d":"sechs","a":"","r":"6","l":3,"c":"رقم","p":0,"e":"6","n":1},{"d":"sieben","a":"","r":"7","l":3,"c":"رقم","p":0,"e":"7","n":1},{"d":"acht","a":"","r":"8","l":3,"c":"رقم","p":0,"e":"8","n":1},{"d":"neun","a":"","r":"9","l":3,"c":"رقم","p":0,"e":"9","n":1},{"d":"zehn","a":"","r":"10","l":3,"c":"رقم","p":0,"e":"10","n":1},{"d":"elf","a":"","r":"11","l":3,"c":"رقم","p":0,"e":"11","n":1},{"d":"zwölf","a":"","r":"12","l":3,"c":"رقم","p":0,"e":"12","n":1},{"d":"dreizehn","a":"","r":"13","l":3,"c":"رقم","p":0,"e":"13","n":1},{"d":"vierzehn","a":"","r":"14","l":3,"c":"رقم","p":0,"e":"14","n":1},{"d":"fünfzehn","a":"","r":"15","l":3,"c":"رقم","p":0,"e":"15","n":1},{"d":"sechzehn","a":"","r":"16","l":3,"c":"رقم","p":0,"e":"16","n":1},{"d":"siebzehn","a":"","r":"17","l":3,"c":"رقم","p":0,"e":"17","n":1},{"d":"achtzehn","a":"","r":"18","l":3,"c":"رقم","p":0,"e":"18","n":1},{"d":"neunzehn","a":"","r":"19","l":3,"c":"رقم","p":0,"e":"19","n":1},{"d":"zwanzig","a":"","r":"20","l":3,"c":"رقم","p":0,"e":"20","n":1},{"d":"dreißig","a":"","r":"30","l":3,"c":"رقم","p":0,"e":"30","n":1},{"d":"vierzig","a":"","r":"40","l":3,"c":"رقم","p":0,"e":"40","n":1},{"d":"fünfzig","a":"","r":"50","l":3,"c":"رقم","p":0,"e":"50","n":1},{"d":"sechzig","a":"","r":"60","l":3,"c":"رقم","p":0,"e":"60","n":1},{"d":"siebzig","a":"","r":"70","l":3,"c":"رقم","p":0,"e":"70","n":1},{"d":"achtzig","a":"","r":"80","l":3,"c":"رقم","p":0,"e":"80","n":1},{"d":"neunzig","a":"","r":"90","l":3,"c":"رقم","p":0,"e":"90","n":1},{"d":"hundert","a":"","r":"100","l":3,"c":"رقم","p":0,"e":"100","n":1},{"d":"Vater","a":"der","r":"الأب","l":4,"c":"","p":0,"e":"👨"},{"d":"Mutter","a":"die","r":"الأم","l":4,"c":"","p":0,"e":"👩"},{"d":"Bruder","a":"der","r":"الأخ","l":4,"c":"","p":0,"e":"👦"},{"d":"Schwester","a":"die","r":"الأخت","l":4,"c":"","p":0,"e":"👧"},{"d":"Sohn","a":"der","r":"الابن","l":4,"c":"","p":0,"e":"👦"},{"d":"Tochter","a":"die","r":"البنت","l":4,"c":"","p":0,"e":"👧"},{"d":"Opa","a":"der","r":"الجد","l":4,"c":"","p":0,"e":"👴"},{"d":"Oma","a":"die","r":"الجدة","l":4,"c":"","p":0,"e":"👵"},{"d":"Onkel","a":"der","r":"العم / الخال","l":4,"c":"","p":0,"e":"👨"},{"d":"Tante","a":"die","r":"العمة / الخالة","l":4,"c":"","p":0,"e":"👩"},{"d":"Schwager","a":"der","r":"زوج الأخت","l":4,"c":"","p":0,"e":"🤵"},{"d":"Schwägerin","a":"die","r":"زوجة الأخ","l":4,"c":"","p":0,"e":"👰"},{"d":"Enkel","a":"der","r":"الحفيد","l":4,"c":"","p":0,"e":"👦"},{"d":"Enkelin","a":"die","r":"الحفيدة","l":4,"c":"","p":0,"e":"👧"},{"d":"Eltern","a":"die","r":"الوالدان","l":4,"c":"","p":1,"e":"👪"},{"d":"Geschwister","a":"die","r":"الإخوة والأخوات","l":4,"c":"","p":1,"e":"👫"},{"d":"Kind","a":"das","r":"الطفل","l":4,"c":"","p":0,"e":"🧒"},{"d":"Familie","a":"die","r":"العائلة","l":4,"c":"","p":0,"e":"👨‍👩‍👧‍👦"},{"d":"rot","a":"","r":"أحمر","l":5,"c":"لون","p":0,"k":"#DD0000"},{"d":"blau","a":"","r":"أزرق","l":5,"c":"لون","p":0,"k":"#1F5FBF"},{"d":"grün","a":"","r":"أخضر","l":5,"c":"لون","p":0,"k":"#1E8E4E"},{"d":"gelb","a":"","r":"أصفر","l":5,"c":"لون","p":0,"k":"#FFCE00"},{"d":"schwarz","a":"","r":"أسود","l":5,"c":"لون","p":0,"k":"#1a1a1a"},{"d":"weiß","a":"","r":"أبيض","l":5,"c":"لون","p":0,"k":"#ffffff"},{"d":"grau","a":"","r":"رمادي","l":5,"c":"لون","p":0,"k":"#8d8d8d"},{"d":"braun","a":"","r":"بني","l":5,"c":"لون","p":0,"k":"#7a4a2a"},{"d":"orange","a":"","r":"برتقالي","l":5,"c":"لون","p":0,"k":"#F28C1B"},{"d":"rosa","a":"","r":"وردي","l":5,"c":"لون","p":0,"k":"#F4A6C0"},{"d":"lila","a":"","r":"بنفسجي","l":5,"c":"لون","p":0,"k":"#8049A8"},{"d":"türkis","a":"","r":"فيروزي","l":5,"c":"لون","p":0,"k":"#1BB5B0"},{"d":"Montag","a":"","r":"الاثنين","l":6,"c":"يوم","p":0,"e":"📅"},{"d":"Dienstag","a":"","r":"الثلاثاء","l":6,"c":"يوم","p":0,"e":"📅"},{"d":"Mittwoch","a":"","r":"الأربعاء","l":6,"c":"يوم","p":0,"e":"📅"},{"d":"Donnerstag","a":"","r":"الخميس","l":6,"c":"يوم","p":0,"e":"📅"},{"d":"Freitag","a":"","r":"الجمعة","l":6,"c":"يوم","p":0,"e":"📅"},{"d":"Samstag","a":"","r":"السبت","l":6,"c":"يوم","p":0,"e":"📅"},{"d":"Sonntag","a":"","r":"الأحد","l":6,"c":"يوم","p":0,"e":"📅"},{"d":"Januar","a":"","r":"يناير","l":6,"c":"شهر","p":0,"e":"❄️"},{"d":"Februar","a":"","r":"فبراير","l":6,"c":"شهر","p":0,"e":"❄️"},{"d":"März","a":"","r":"مارس","l":6,"c":"شهر","p":0,"e":"🌸"},{"d":"April","a":"","r":"أبريل","l":6,"c":"شهر","p":0,"e":"🌸"},{"d":"Mai","a":"","r":"مايو","l":6,"c":"شهر","p":0,"e":"🌸"},{"d":"Juni","a":"","r":"يونيو","l":6,"c":"شهر","p":0,"e":"☀️"},{"d":"Juli","a":"","r":"يوليو","l":6,"c":"شهر","p":0,"e":"☀️"},{"d":"August","a":"","r":"أغسطس","l":6,"c":"شهر","p":0,"e":"☀️"},{"d":"September","a":"","r":"سبتمبر","l":6,"c":"شهر","p":0,"e":"🍂"},{"d":"Oktober","a":"","r":"أكتوبر","l":6,"c":"شهر","p":0,"e":"🍂"},{"d":"November","a":"","r":"نوفمبر","l":6,"c":"شهر","p":0,"e":"🍂"},{"d":"Dezember","a":"","r":"ديسمبر","l":6,"c":"شهر","p":0,"e":"❄️"},{"d":"Brot","a":"das","r":"الخبز","l":8,"c":"","p":0,"e":"🍞"},{"d":"Reis","a":"der","r":"الأرز","l":8,"c":"","p":0,"e":"🍚"},{"d":"Fleisch","a":"das","r":"اللحم","l":8,"c":"","p":0,"e":"🥩"},{"d":"Hähnchen","a":"das","r":"الدجاج","l":8,"c":"","p":0,"e":"🍗"},{"d":"Fisch","a":"der","r":"السمك","l":8,"c":"","p":0,"e":"🐟"},{"d":"Ei","a":"das","r":"البيضة","l":8,"c":"","p":0,"e":"🥚"},{"d":"Käse","a":"der","r":"الجبن","l":8,"c":"","p":0,"e":"🧀"},{"d":"Milch","a":"die","r":"الحليب","l":8,"c":"","p":0,"e":"🥛"},{"d":"Wasser","a":"das","r":"الماء","l":8,"c":"","p":0,"e":"💧"},{"d":"Tee","a":"der","r":"الشاي","l":8,"c":"","p":0,"e":"🍵"},{"d":"Kaffee","a":"der","r":"القهوة","l":8,"c":"","p":0,"e":"☕"},{"d":"Saft","a":"der","r":"العصير","l":8,"c":"","p":0,"e":"🧃"},{"d":"Apfel","a":"der","r":"التفاحة","l":8,"c":"","p":0,"e":"🍎"},{"d":"Banane","a":"die","r":"الموز","l":8,"c":"","p":0,"e":"🍌"},{"d":"Orange","a":"die","r":"البرتقال","l":8,"c":"","p":0,"e":"🍊"},{"d":"Kartoffel","a":"die","r":"البطاطس","l":8,"c":"","p":0,"e":"🥔"},{"d":"Tomate","a":"die","r":"الطماطم","l":8,"c":"","p":0,"e":"🍅"},{"d":"Salat","a":"der","r":"السلطة","l":8,"c":"","p":0,"e":"🥗"},{"d":"Suppe","a":"die","r":"الحساء","l":8,"c":"","p":0,"e":"🍲"},{"d":"Salz","a":"das","r":"الملح","l":8,"c":"","p":0,"e":"🧂"},{"d":"wer","a":"","r":"مَن؟","l":9,"c":"شخص","p":0},{"d":"was","a":"","r":"ماذا؟","l":9,"c":"شيء","p":0},{"d":"wo","a":"","r":"أين؟","l":9,"c":"مكان","p":0},{"d":"woher","a":"","r":"من أين؟","l":9,"c":"الأصل","p":0},{"d":"wohin","a":"","r":"إلى أين؟","l":9,"c":"الاتجاه","p":0},{"d":"wann","a":"","r":"متى؟","l":9,"c":"الزمن","p":0},{"d":"warum","a":"","r":"لماذا؟","l":9,"c":"السبب","p":0},{"d":"wie","a":"","r":"كيف؟","l":9,"c":"الطريقة","p":0},{"d":"wie viel","a":"","r":"كم؟","l":9,"c":"الكمية","p":0},{"d":"wie viele","a":"","r":"كم عددًا؟","l":9,"c":"العدد","p":0},{"d":"wie alt","a":"","r":"كم العمر؟","l":9,"c":"العمر","p":0},{"d":"welche","a":"","r":"أي؟","l":9,"c":"الاختيار","p":0},{"d":"Student","a":"der","r":"طالب","l":10,"c":"","p":0,"e":"🎓"},{"d":"Studentin","a":"die","r":"طالبة","l":10,"c":"","p":0,"e":"🎓"},{"d":"Lehrer","a":"der","r":"معلم","l":10,"c":"","p":0,"e":"👨‍🏫"},{"d":"Lehrerin","a":"die","r":"معلمة","l":10,"c":"","p":0,"e":"👩‍🏫"},{"d":"Arzt","a":"der","r":"طبيب","l":10,"c":"","p":0,"e":"👨‍⚕️"},{"d":"Ärztin","a":"die","r":"طبيبة","l":10,"c":"","p":0,"e":"👩‍⚕️"},{"d":"Ingenieur","a":"der","r":"مهندس","l":10,"c":"","p":0,"e":"👷"},{"d":"Ingenieurin","a":"die","r":"مهندسة","l":10,"c":"","p":0,"e":"👷‍♀️"},{"d":"Informatiker","a":"der","r":"مختص معلوميات","l":10,"c":"","p":0,"e":"👨‍💻"},{"d":"Informatikerin","a":"die","r":"مختصة معلوميات","l":10,"c":"","p":0,"e":"👩‍💻"},{"d":"Techniker","a":"der","r":"تقني","l":10,"c":"","p":0,"e":"🔧"},{"d":"Technikerin","a":"die","r":"تقنية","l":10,"c":"","p":0,"e":"🔧"},{"d":"Verkäufer","a":"der","r":"بائع","l":10,"c":"","p":0,"e":"🛒"},{"d":"Verkäuferin","a":"die","r":"بائعة","l":10,"c":"","p":0,"e":"🛒"},{"d":"Koch","a":"der","r":"طباخ","l":10,"c":"","p":0,"e":"👨‍🍳"},{"d":"Köchin","a":"die","r":"طباخة","l":10,"c":"","p":0,"e":"👩‍🍳"},{"d":"Fahrer","a":"der","r":"سائق","l":10,"c":"","p":0,"e":"🚌"},{"d":"Fahrerin","a":"die","r":"سائقة","l":10,"c":"","p":0,"e":"🚌"},{"d":"Polizist","a":"der","r":"شرطي","l":10,"c":"","p":0,"e":"👮"},{"d":"Polizistin","a":"die","r":"شرطية","l":10,"c":"","p":0,"e":"👮‍♀️"},{"d":"Kellner","a":"der","r":"نادل","l":10,"c":"","p":0,"e":"🍽️"},{"d":"Kellnerin","a":"die","r":"نادلة","l":10,"c":"","p":0,"e":"🍽️"},{"d":"Mechaniker","a":"der","r":"ميكانيكي","l":10,"c":"","p":0,"e":"🔩"},{"d":"Mechanikerin","a":"die","r":"ميكانيكية","l":10,"c":"","p":0,"e":"🔩"},{"d":"ich","a":"","r":"أنا","l":11,"c":"المتكلم · مفرد","p":0},{"d":"du","a":"","r":"أنت (غير رسمي)","l":11,"c":"المخاطب · مفرد","p":0},{"d":"er","a":"","r":"هو","l":11,"c":"الغائب · مفرد","p":0},{"d":"sie","a":"","r":"هي","l":11,"c":"الغائبة · مفرد","p":0},{"d":"es","a":"","r":"هو / هي (لغير العاقل)","l":11,"c":"للأشياء · مفرد","p":0},{"d":"wir","a":"","r":"نحن","l":11,"c":"المتكلم · جمع","p":0},{"d":"ihr","a":"","r":"أنتم (غير رسمي)","l":11,"c":"المخاطب · جمع","p":0},{"d":"sie","a":"","r":"هم / هنّ","l":11,"c":"الغائب · جمع","p":0},{"d":"Sie","a":"","r":"أنت / أنتم (رسمي)","l":11,"c":"للمخاطب بأدب","p":0},{"d":"gehen","a":"","r":"يذهب","l":12,"c":"منتظم","p":0,"e":"🚶"},{"d":"kommen","a":"","r":"يأتي","l":12,"c":"منتظم","p":0},{"d":"wohnen","a":"","r":"يسكن","l":12,"c":"منتظم","p":0,"e":"🏠"},{"d":"lernen","a":"","r":"يتعلم","l":12,"c":"منتظم","p":0,"e":"📚"},{"d":"machen","a":"","r":"يفعل","l":12,"c":"منتظم","p":0},{"d":"spielen","a":"","r":"يلعب","l":12,"c":"منتظم","p":0,"e":"🎮"},{"d":"kaufen","a":"","r":"يشتري","l":12,"c":"منتظم","p":0,"e":"🛒"},{"d":"trinken","a":"","r":"يشرب","l":12,"c":"منتظم","p":0,"e":"🥤"},{"d":"hören","a":"","r":"يسمع","l":12,"c":"منتظم","p":0,"e":"👂"},{"d":"brauchen","a":"","r":"يحتاج","l":12,"c":"منتظم","p":0},{"d":"sprechen","a":"","r":"يتكلم","l":12,"c":"غير منتظم","p":0,"e":"🗣️"},{"d":"essen","a":"","r":"يأكل","l":12,"c":"غير منتظم","p":0,"e":"🍽️"},{"d":"lesen","a":"","r":"يقرأ","l":12,"c":"غير منتظم","p":0,"e":"📖"},{"d":"sehen","a":"","r":"يرى","l":12,"c":"غير منتظم","p":0,"e":"👀"},{"d":"fahren","a":"","r":"يسافر / يقود","l":12,"c":"غير منتظم","p":0,"e":"🚗"},{"d":"schlafen","a":"","r":"ينام","l":12,"c":"غير منتظم","p":0,"e":"😴"},{"d":"nehmen","a":"","r":"يأخذ","l":12,"c":"غير منتظم","p":0},{"d":"geben","a":"","r":"يعطي","l":12,"c":"غير منتظم","p":0,"e":"🤲"},{"d":"der Tag → die Tage","a":"","r":"اليوم → الأيام","l":16,"c":"جمع","p":0},{"d":"der Freund → die Freunde","a":"","r":"الصديق → الأصدقاء","l":16,"c":"جمع","p":0},{"d":"die Stadt → die Städte","a":"","r":"المدينة → المدن","l":16,"c":"جمع","p":0},{"d":"der Stuhl → die Stühle","a":"","r":"الكرسي → الكراسي","l":16,"c":"جمع","p":0},{"d":"das Kind → die Kinder","a":"","r":"الطفل → الأطفال","l":16,"c":"جمع","p":0},{"d":"das Haus → die Häuser","a":"","r":"المنزل → المنازل","l":16,"c":"جمع","p":0},{"d":"das Buch → die Bücher","a":"","r":"الكتاب → الكتب","l":16,"c":"جمع","p":0},{"d":"die Schule → die Schulen","a":"","r":"المدرسة → المدارس","l":16,"c":"جمع","p":0},{"d":"die Tasche → die Taschen","a":"","r":"الحقيبة → الحقائب","l":16,"c":"جمع","p":0},{"d":"die Frau → die Frauen","a":"","r":"المرأة → النساء","l":16,"c":"جمع","p":0},{"d":"die Zahl → die Zahlen","a":"","r":"الرقم → الأرقام","l":16,"c":"جمع","p":0},{"d":"die Lehrerin → die Lehrerinnen","a":"","r":"المعلمة → المعلمات","l":16,"c":"جمع","p":0},{"d":"das Auto → die Autos","a":"","r":"السيارة → السيارات","l":16,"c":"جمع","p":0},{"d":"das Handy → die Handys","a":"","r":"الهاتف → الهواتف","l":16,"c":"جمع","p":0},{"d":"der Lehrer → die Lehrer","a":"","r":"المعلم → المعلمون","l":16,"c":"جمع","p":0},{"d":"das Zimmer → die Zimmer","a":"","r":"الغرفة → الغرف","l":16,"c":"جمع","p":0},{"d":"der Bruder → die Brüder","a":"","r":"الأخ → الإخوة","l":16,"c":"جمع","p":0},{"d":"die Mutter → die Mütter","a":"","r":"الأم → الأمهات","l":16,"c":"جمع","p":0},{"d":"der Apfel → die Äpfel","a":"","r":"التفاحة → التفاح","l":16,"c":"جمع","p":0},{"d":"erste","a":"","r":"1. · الأول","l":25,"c":"رقم","p":0,"e":"1.","n":1},{"d":"zweite","a":"","r":"2. · الثاني","l":25,"c":"رقم","p":0,"e":"2.","n":1},{"d":"dritte","a":"","r":"3. · الثالث","l":25,"c":"رقم","p":0,"e":"3.","n":1},{"d":"vierte","a":"","r":"4. · الرابع","l":25,"c":"رقم","p":0,"e":"4.","n":1},{"d":"fünfte","a":"","r":"5. · الخامس","l":25,"c":"رقم","p":0,"e":"5.","n":1},{"d":"sechste","a":"","r":"6. · السادس","l":25,"c":"رقم","p":0,"e":"6.","n":1},{"d":"siebte","a":"","r":"7. · السابع","l":25,"c":"رقم","p":0,"e":"7.","n":1},{"d":"achte","a":"","r":"8. · الثامن","l":25,"c":"رقم","p":0,"e":"8.","n":1},{"d":"neunte","a":"","r":"9. · التاسع","l":25,"c":"رقم","p":0,"e":"9.","n":1},{"d":"zehnte","a":"","r":"10. · العاشر","l":25,"c":"رقم","p":0,"e":"10.","n":1},{"d":"elfte","a":"","r":"11. · الحادي عشر","l":25,"c":"رقم","p":0,"e":"11.","n":1},{"d":"zwölfte","a":"","r":"12. · الثاني عشر","l":25,"c":"رقم","p":0,"e":"12.","n":1},{"d":"zwanzigste","a":"","r":"20. · العشرون","l":25,"c":"رقم","p":0,"e":"20.","n":1},{"d":"einundzwanzigste","a":"","r":"21. · الحادي والعشرون","l":25,"c":"رقم","p":0,"e":"21.","n":1},{"d":"dreißigste","a":"","r":"30. · الثلاثون","l":25,"c":"رقم","p":0,"e":"30.","n":1},{"d":"einunddreißigste","a":"","r":"31. · الحادي والثلاثون","l":25,"c":"رقم","p":0,"e":"31.","n":1},{"d":"groß","a":"","r":"طويل","l":28,"c":"صفة","p":0},{"d":"klein","a":"","r":"قصير","l":28,"c":"صفة","p":0},{"d":"schlank","a":"","r":"نحيف","l":28,"c":"صفة","p":0},{"d":"kräftig","a":"","r":"قوي البنية","l":28,"c":"صفة","p":0},{"d":"jung","a":"","r":"شاب","l":28,"c":"صفة","p":0},{"d":"alt","a":"","r":"كبير في السن","l":28,"c":"صفة","p":0,"e":"🧓"},{"d":"hübsch","a":"","r":"جميل","l":28,"c":"صفة","p":0},{"d":"einfach","a":"","r":"بسيط","l":28,"c":"صفة","p":0},{"d":"schnell","a":"","r":"سريع","l":28,"c":"صفة","p":0,"e":"🐇"},{"d":"langsam","a":"","r":"بطيء","l":28,"c":"صفة","p":0,"e":"🐢"},{"d":"laut","a":"","r":"صاخب","l":28,"c":"صفة","p":0,"e":"📢"},{"d":"leise","a":"","r":"هادئ الصوت","l":28,"c":"صفة","p":0,"e":"🤫"},{"d":"nett","a":"","r":"لطيف","l":28,"c":"صفة","p":0,"e":"🙂"},{"d":"freundlich","a":"","r":"ودود","l":28,"c":"صفة","p":0,"e":"😊"},{"d":"lustig","a":"","r":"مرح","l":28,"c":"صفة","p":0,"e":"😄"},{"d":"ruhig","a":"","r":"هادئ","l":28,"c":"صفة","p":0,"e":"😌"},{"d":"fleißig","a":"","r":"مجتهد","l":28,"c":"صفة","p":0},{"d":"faul","a":"","r":"كسول","l":28,"c":"صفة","p":0,"e":"🛋️"},{"d":"ehrlich","a":"","r":"صادق","l":28,"c":"صفة","p":0},{"d":"höflich","a":"","r":"مهذب","l":28,"c":"صفة","p":0},{"d":"schüchtern","a":"","r":"خجول","l":28,"c":"صفة","p":0,"e":"😳"},{"d":"intelligent","a":"","r":"ذكي","l":28,"c":"صفة","p":0,"e":"🧠"},{"d":"sportlich","a":"","r":"رياضي","l":28,"c":"صفة","p":0,"e":"🏅"},{"d":"kreativ","a":"","r":"مبدع","l":28,"c":"صفة","p":0,"e":"🎨"},{"d":"Fußball spielen","a":"","r":"يلعب كرة القدم","l":30,"c":"نشاط","p":0,"e":"⚽"},{"d":"Gitarre spielen","a":"","r":"يعزف الغيتار","l":30,"c":"نشاط","p":0,"e":"🎸"},{"d":"schwimmen","a":"","r":"يسبح","l":30,"c":"نشاط","p":0,"e":"🏊"},{"d":"laufen","a":"","r":"يجري","l":30,"c":"نشاط","p":0,"e":"🏃"},{"d":"Rad fahren","a":"","r":"يركب الدراجة","l":30,"c":"نشاط","p":0,"e":"🚴"},{"d":"wandern","a":"","r":"يتنزه سيرًا","l":30,"c":"نشاط","p":0,"e":"🥾"},{"d":"Musik hören","a":"","r":"يسمع الموسيقى","l":30,"c":"نشاط","p":0,"e":"🎧"},{"d":"ins Kino gehen","a":"","r":"يذهب إلى السينما","l":30,"c":"نشاط","p":0,"e":"🎬"},{"d":"Freunde treffen","a":"","r":"يلتقي بالأصدقاء","l":30,"c":"نشاط","p":0,"e":"🤝"},{"d":"kochen","a":"","r":"يطبخ","l":30,"c":"نشاط","p":0,"e":"👨‍🍳"},{"d":"fotografieren","a":"","r":"يصوّر","l":30,"c":"نشاط","p":0,"e":"📷"},{"d":"zeichnen","a":"","r":"يرسم","l":30,"c":"نشاط","p":0,"e":"✏️"},{"d":"tanzen","a":"","r":"يرقص","l":30,"c":"نشاط","p":0,"e":"💃"},{"d":"Flasche","a":"die","r":"قنينة","l":31,"c":"","p":0,"e":"🍼"},{"d":"Packung","a":"die","r":"علبة / كيس","l":31,"c":"","p":0,"e":"📦"},{"d":"Dose","a":"die","r":"علبة معدنية","l":31,"c":"","p":0,"e":"🥫"},{"d":"Glas","a":"das","r":"برطمان / كأس","l":31,"c":"","p":0,"e":"🥤"},{"d":"Tube","a":"die","r":"أنبوب","l":31,"c":"","p":0,"e":"🧴"},{"d":"Stück","a":"das","r":"قطعة","l":31,"c":"","p":0,"e":"🍰"},{"d":"Kilo","a":"das","r":"كيلو","l":31,"c":"","p":0,"e":"⚖️"},{"d":"Liter","a":"der","r":"لتر","l":31,"c":"","p":0,"e":"💧"},{"d":"Gramm","a":"das","r":"غرام","l":31,"c":"","p":0,"e":"⚖️"},{"d":"Tüte","a":"die","r":"كيس","l":31,"c":"","p":0,"e":"🛍️"},{"d":"Becher","a":"der","r":"كوب","l":31,"c":"","p":0,"e":"🥤"},{"d":"Scheibe","a":"die","r":"شريحة","l":31,"c":"","p":0,"e":"🍞"},{"d":"Kasten","a":"der","r":"صندوق","l":31,"c":"","p":0,"e":"📦"},{"d":"Päckchen","a":"das","r":"علبة صغيرة","l":31,"c":"","p":0,"e":"📦"},{"d":"Vorspeise","a":"die","r":"المقبلات","l":32,"c":"","p":0,"e":"🥗"},{"d":"Hauptgericht","a":"das","r":"الطبق الرئيسي","l":32,"c":"","p":0,"e":"🍛"},{"d":"Nachspeise","a":"die","r":"الحلوى","l":32,"c":"","p":0,"e":"🍰"},{"d":"Getränk","a":"das","r":"المشروب","l":32,"c":"","p":0,"e":"🥤"},{"d":"Rechnung","a":"die","r":"الفاتورة","l":32,"c":"","p":0,"e":"🧾"},{"d":"Trinkgeld","a":"das","r":"الإكرامية","l":32,"c":"","p":0,"e":"💶"},{"d":"Bedienung","a":"die","r":"النادلة / الخدمة","l":32,"c":"","p":0,"e":"🙋"},{"d":"Teller","a":"der","r":"الصحن","l":32,"c":"","p":0,"e":"🍽️"},{"d":"Gabel","a":"die","r":"الشوكة","l":32,"c":"","p":0,"e":"🍴"},{"d":"Messer","a":"das","r":"السكين","l":32,"c":"","p":0,"e":"🔪"},{"d":"Löffel","a":"der","r":"الملعقة","l":32,"c":"","p":0,"e":"🥄"},{"d":"Tasse","a":"die","r":"الفنجان","l":32,"c":"","p":0,"e":"☕"},{"d":"Glas","a":"das","r":"الكأس","l":32,"c":"","p":0,"e":"🥤"},{"d":"Serviette","a":"die","r":"المحرمة","l":32,"c":"","p":0,"e":"🧻"},{"d":"Supermarkt","a":"der","r":"السوبرماركت","l":33,"c":"","p":0,"e":"🛒"},{"d":"Bäckerei","a":"die","r":"المخبزة","l":33,"c":"","p":0,"e":"🥖"},{"d":"Metzgerei","a":"die","r":"الجزارة","l":33,"c":"","p":0,"e":"🥩"},{"d":"Apotheke","a":"die","r":"الصيدلية","l":33,"c":"","p":0,"e":"💊"},{"d":"Markt","a":"der","r":"السوق","l":33,"c":"","p":0,"e":"🧺"},{"d":"Kaufhaus","a":"das","r":"المتجر الكبير","l":33,"c":"","p":0,"e":"🏬"},{"d":"Kiosk","a":"der","r":"الكشك","l":33,"c":"","p":0,"e":"📰"},{"d":"Drogerie","a":"die","r":"محل مستحضرات","l":33,"c":"","p":0,"e":"🧴"},{"d":"T-Shirt","a":"das","r":"تي شيرت","l":34,"c":"","p":0,"e":"👕"},{"d":"Hemd","a":"das","r":"قميص","l":34,"c":"","p":0,"e":"👔"},{"d":"Pullover","a":"der","r":"سترة صوف","l":34,"c":"","p":0,"e":"🧶"},{"d":"Jacke","a":"die","r":"سترة","l":34,"c":"","p":0,"e":"🧥"},{"d":"Mantel","a":"der","r":"معطف","l":34,"c":"","p":0,"e":"🧥"},{"d":"Hose","a":"die","r":"سروال","l":34,"c":"","p":0,"e":"👖"},{"d":"Jeans","a":"die","r":"جينز","l":34,"c":"","p":1,"e":"👖"},{"d":"Rock","a":"der","r":"تنورة","l":34,"c":"","p":0,"e":"👗"},{"d":"Kleid","a":"das","r":"فستان","l":34,"c":"","p":0,"e":"👗"},{"d":"Schuhe","a":"die","r":"حذاء","l":34,"c":"","p":1,"e":"👟"},{"d":"Socken","a":"die","r":"جوارب","l":34,"c":"","p":1,"e":"🧦"},{"d":"Mütze","a":"die","r":"قبعة","l":34,"c":"","p":0,"e":"🧢"},{"d":"Schal","a":"der","r":"وشاح","l":34,"c":"","p":0,"e":"🧣"},{"d":"Tasche","a":"die","r":"حقيبة","l":34,"c":"","p":0,"e":"👜"},{"d":"Wohnzimmer","a":"das","r":"غرفة الجلوس","l":35,"c":"","p":0,"e":"🛋️"},{"d":"Schlafzimmer","a":"das","r":"غرفة النوم","l":35,"c":"","p":0,"e":"🛏️"},{"d":"Küche","a":"die","r":"المطبخ","l":35,"c":"","p":0,"e":"🍳"},{"d":"Badezimmer","a":"das","r":"الحمام","l":35,"c":"","p":0,"e":"🛁"},{"d":"Kinderzimmer","a":"das","r":"غرفة الأطفال","l":35,"c":"","p":0,"e":"🧸"},{"d":"Flur","a":"der","r":"الممر","l":35,"c":"","p":0,"e":"🚪"},{"d":"Balkon","a":"der","r":"الشرفة","l":35,"c":"","p":0,"e":"🌇"},{"d":"Garten","a":"der","r":"الحديقة","l":35,"c":"","p":0,"e":"🌳"},{"d":"Tisch","a":"der","r":"الطاولة","l":35,"c":"","p":0,"e":"🍽️"},{"d":"Stuhl","a":"der","r":"الكرسي","l":35,"c":"","p":0,"e":"💺"},{"d":"Bett","a":"das","r":"السرير","l":35,"c":"","p":0,"e":"🛏️"},{"d":"Schrank","a":"der","r":"الخزانة","l":35,"c":"","p":0,"e":"🗄️"},{"d":"Sofa","a":"das","r":"الأريكة","l":35,"c":"","p":0,"e":"🛋️"},{"d":"Regal","a":"das","r":"الرف","l":35,"c":"","p":0,"e":"📚"},{"d":"Lampe","a":"die","r":"المصباح","l":35,"c":"","p":0,"e":"💡"},{"d":"Teppich","a":"der","r":"السجادة","l":35,"c":"","p":0},{"d":"Kühlschrank","a":"der","r":"الثلاجة","l":35,"c":"","p":0,"e":"🧊"},{"d":"Herd","a":"der","r":"الموقد","l":35,"c":"","p":0,"e":"🔥"},{"d":"Waschmaschine","a":"die","r":"الغسالة","l":35,"c":"","p":0,"e":"🧼"},{"d":"Spiegel","a":"der","r":"المرآة","l":35,"c":"","p":0,"e":"🔍"},{"d":"Bahnhof","a":"der","r":"محطة القطار","l":36,"c":"","p":0,"e":"🚉"},{"d":"Haltestelle","a":"die","r":"موقف الحافلة","l":36,"c":"","p":0,"e":"🚏"},{"d":"Flughafen","a":"der","r":"المطار","l":36,"c":"","p":0,"e":"✈️"},{"d":"Bank","a":"die","r":"البنك","l":36,"c":"","p":0,"e":"🏦"},{"d":"Post","a":"die","r":"البريد","l":36,"c":"","p":0,"e":"📮"},{"d":"Krankenhaus","a":"das","r":"المستشفى","l":36,"c":"","p":0,"e":"🏥"},{"d":"Schule","a":"die","r":"المدرسة","l":36,"c":"","p":0,"e":"🏫"},{"d":"Universität","a":"die","r":"الجامعة","l":36,"c":"","p":0,"e":"🎓"},{"d":"Park","a":"der","r":"الحديقة","l":36,"c":"","p":0,"e":"🌳"},{"d":"Museum","a":"das","r":"المتحف","l":36,"c":"","p":0,"e":"🏛️"},{"d":"Rathaus","a":"das","r":"البلدية","l":36,"c":"","p":0,"e":"🏛️"},{"d":"Bibliothek","a":"die","r":"المكتبة","l":36,"c":"","p":0,"e":"📚"},{"d":"Termin","a":"der","r":"الموعد","l":38,"c":"","p":0,"e":"📅"},{"d":"Einladung","a":"die","r":"الدعوة","l":38,"c":"","p":0,"e":"💌"},{"d":"Verabredung","a":"die","r":"موعد لقاء","l":38,"c":"","p":0,"e":"🤝"},{"d":"Treffen","a":"das","r":"اللقاء","l":38,"c":"","p":0,"e":"🤝"},{"d":"Zeit","a":"die","r":"الوقت","l":38,"c":"","p":0,"e":"⏰"},{"d":"Kalender","a":"der","r":"التقويم","l":38,"c":"","p":0,"e":"📆"},{"d":"Sonne","a":"die","r":"الشمس","l":39,"c":"","p":0,"e":"☀️"},{"d":"Regen","a":"der","r":"المطر","l":39,"c":"","p":0,"e":"🌧️"},{"d":"Wind","a":"der","r":"الريح","l":39,"c":"","p":0,"e":"💨"},{"d":"Wolke","a":"die","r":"الغيمة","l":39,"c":"","p":0,"e":"☁️"},{"d":"Schnee","a":"der","r":"الثلج","l":39,"c":"","p":0,"e":"❄️"},{"d":"Gewitter","a":"das","r":"العاصفة الرعدية","l":39,"c":"","p":0,"e":"⛈️"},{"d":"Nebel","a":"der","r":"الضباب","l":39,"c":"","p":0,"e":"🌫️"},{"d":"Temperatur","a":"die","r":"درجة الحرارة","l":39,"c":"","p":0,"e":"🌡️"},{"d":"warm","a":"","r":"دافئ","l":39,"c":"صفة","p":0,"e":"🌡️"},{"d":"kalt","a":"","r":"بارد","l":39,"c":"صفة","p":0,"e":"🥶"},{"d":"heiß","a":"","r":"حار","l":39,"c":"صفة","p":0,"e":"🥵"},{"d":"kühl","a":"","r":"منعش","l":39,"c":"صفة","p":0},{"d":"sonnig","a":"","r":"مشمس","l":39,"c":"صفة","p":0,"e":"☀️"},{"d":"bewölkt","a":"","r":"غائم","l":39,"c":"صفة","p":0,"e":"☁️"},{"d":"trocken","a":"","r":"جاف","l":39,"c":"صفة","p":0,"e":"🏜️"},{"d":"nass","a":"","r":"رطب","l":39,"c":"صفة","p":0,"e":"💦"},{"d":"windig","a":"","r":"عاصف","l":39,"c":"صفة","p":0,"e":"💨"},{"d":"windstill","a":"","r":"هادئ","l":39,"c":"صفة","p":0},{"d":"Kopf","a":"der","r":"الرأس","l":40,"c":"","p":0,"e":"🙂"},{"d":"Gesicht","a":"das","r":"الوجه","l":40,"c":"","p":0,"e":"🙂"},{"d":"Auge (Pl. Augen)","a":"das","r":"العين","l":40,"c":"","p":1,"e":"👁️"},{"d":"Ohr (Pl. Ohren)","a":"das","r":"الأذن","l":40,"c":"","p":1,"e":"👂"},{"d":"Nase","a":"die","r":"الأنف","l":40,"c":"","p":0,"e":"👃"},{"d":"Mund","a":"der","r":"الفم","l":40,"c":"","p":0,"e":"👄"},{"d":"Hals","a":"der","r":"الرقبة","l":40,"c":"","p":0,"e":"🧣"},{"d":"Arm","a":"der","r":"الذراع","l":40,"c":"","p":0,"e":"💪"},{"d":"Hand","a":"die","r":"اليد","l":40,"c":"","p":0,"e":"✋"},{"d":"Finger","a":"der","r":"الإصبع","l":40,"c":"","p":0,"e":"☝️"},{"d":"Bauch","a":"der","r":"البطن","l":40,"c":"","p":0},{"d":"Rücken","a":"der","r":"الظهر","l":40,"c":"","p":0},{"d":"Bein","a":"das","r":"الرجل","l":40,"c":"","p":0,"e":"🦵"},{"d":"Fuß","a":"der","r":"القدم","l":40,"c":"","p":0,"e":"🦶"},{"d":"Herz","a":"das","r":"القلب","l":40,"c":"","p":0,"e":"❤️"},{"d":"Zahn","a":"der","r":"السن","l":40,"c":"","p":0,"e":"🦷"},{"d":"Urlaub","a":"der","r":"العطلة","l":41,"c":"","p":0,"e":"🏖️"},{"d":"Reise","a":"die","r":"الرحلة","l":41,"c":"","p":0,"e":"🧳"},{"d":"Koffer","a":"der","r":"الحقيبة","l":41,"c":"","p":0,"e":"🧳"},{"d":"Reisepass","a":"der","r":"جواز السفر","l":41,"c":"","p":0,"e":"🛂"},{"d":"Visum","a":"das","r":"التأشيرة","l":41,"c":"","p":0,"e":"🛂"},{"d":"Flug","a":"der","r":"الرحلة الجوية","l":41,"c":"","p":0,"e":"✈️"},{"d":"Hotel","a":"das","r":"الفندق","l":41,"c":"","p":0,"e":"🏨"},{"d":"Zimmer","a":"das","r":"الغرفة","l":41,"c":"","p":0,"e":"🛏️"},{"d":"Reservierung","a":"die","r":"الحجز","l":41,"c":"","p":0,"e":"📝"},{"d":"Strand","a":"der","r":"الشاطئ","l":41,"c":"","p":0,"e":"🏖️"},{"d":"Meer","a":"das","r":"البحر","l":41,"c":"","p":0,"e":"🌊"},{"d":"Sehenswürdigkeit","a":"die","r":"المعلم السياحي","l":41,"c":"","p":0,"e":"🏰"},{"d":"Kurs","a":"der","r":"الدورة","l":42,"c":"","p":0,"e":"📚"},{"d":"Klasse","a":"die","r":"القسم","l":42,"c":"","p":0,"e":"🏫"},{"d":"Lehrer","a":"der","r":"الأستاذ","l":42,"c":"","p":0,"e":"👨‍🏫"},{"d":"Lehrerin","a":"die","r":"الأستاذة","l":42,"c":"","p":0,"e":"👩‍🏫"},{"d":"Schüler","a":"der","r":"التلميذ","l":42,"c":"","p":0,"e":"🎒"},{"d":"Student","a":"der","r":"الطالب","l":42,"c":"","p":0,"e":"🎓"},{"d":"Buch","a":"das","r":"الكتاب","l":42,"c":"","p":0,"e":"📖"},{"d":"Heft","a":"das","r":"الدفتر","l":42,"c":"","p":0,"e":"📓"},{"d":"Stift","a":"der","r":"القلم","l":42,"c":"","p":0,"e":"✏️"},{"d":"Kugelschreiber","a":"der","r":"قلم الحبر الجاف","l":42,"c":"","p":0,"e":"🖊️"},{"d":"Tafel","a":"die","r":"السبورة","l":42,"c":"","p":0,"e":"📋"},{"d":"Wörterbuch","a":"das","r":"القاموس","l":42,"c":"","p":0,"e":"📚"},{"d":"Hausaufgabe","a":"die","r":"الواجب","l":42,"c":"","p":0,"e":"📝"},{"d":"Prüfung","a":"die","r":"الامتحان","l":42,"c":"","p":0,"e":"📝"},{"d":"Note","a":"die","r":"النقطة","l":42,"c":"","p":0,"e":"💯"},{"d":"Pause","a":"die","r":"الاستراحة","l":42,"c":"","p":0,"e":"⏸️"},{"d":"Handy","a":"das","r":"الهاتف المحمول","l":43,"c":"","p":0,"e":"📱"},{"d":"Smartphone","a":"das","r":"الهاتف الذكي","l":43,"c":"","p":0,"e":"📱"},{"d":"Nachricht","a":"die","r":"الرسالة","l":43,"c":"","p":0,"e":"💬"},{"d":"E-Mail","a":"die","r":"البريد الإلكتروني","l":43,"c":"","p":0,"e":"📧"},{"d":"Internet","a":"das","r":"الإنترنت","l":43,"c":"","p":0,"e":"🌐"},{"d":"WLAN","a":"das","r":"الواي فاي","l":43,"c":"","p":0,"e":"📶"},{"d":"Passwort","a":"das","r":"كلمة السر","l":43,"c":"","p":0,"e":"🔑"},{"d":"App","a":"die","r":"التطبيق","l":43,"c":"","p":0,"e":"📲"},{"d":"Foto","a":"das","r":"الصورة","l":43,"c":"","p":0,"e":"📷"},{"d":"Laptop","a":"der","r":"الحاسوب المحمول","l":43,"c":"","p":0,"e":"💻"},{"d":"Bildschirm","a":"der","r":"الشاشة","l":43,"c":"","p":0,"e":"🖥️"},{"d":"Webseite","a":"die","r":"الموقع","l":43,"c":"","p":0,"e":"🌐"},{"d":"Paket","a":"das","r":"الطرد","l":44,"c":"","p":0,"e":"📦"},{"d":"Brief","a":"der","r":"الرسالة","l":44,"c":"","p":0,"e":"✉️"},{"d":"Briefmarke","a":"die","r":"الطابع","l":44,"c":"","p":0,"e":"📮"},{"d":"Postkarte","a":"die","r":"البطاقة البريدية","l":44,"c":"","p":0,"e":"💌"},{"d":"Adresse","a":"die","r":"العنوان","l":44,"c":"","p":0,"e":"📍"},{"d":"Postleitzahl","a":"die","r":"الرمز البريدي","l":44,"c":"","p":0,"e":"🔢"},{"d":"Absender","a":"der","r":"المرسِل","l":44,"c":"","p":0,"e":"📤"},{"d":"Empfänger","a":"der","r":"المستلم","l":44,"c":"","p":0,"e":"📥"},{"d":"Euro","a":"der","r":"اليورو","l":45,"c":"","p":0,"e":"💶"},{"d":"Cent","a":"der","r":"السنت","l":45,"c":"","p":0,"e":"💰"},{"d":"Geld","a":"das","r":"المال","l":45,"c":"","p":0,"e":"💵"},{"d":"Karte","a":"die","r":"البطاقة","l":45,"c":"","p":0,"e":"💳"},{"d":"Geldautomat","a":"der","r":"الصراف الآلي","l":45,"c":"","p":0,"e":"🏧"},{"d":"Konto","a":"das","r":"الحساب","l":45,"c":"","p":0,"e":"🏦"},{"d":"Währung","a":"die","r":"العملة","l":45,"c":"","p":0,"e":"💱"},{"d":"Kurs","a":"der","r":"سعر الصرف","l":45,"c":"","p":0,"e":"💱"},{"d":"Quittung","a":"die","r":"الوصل","l":45,"c":"","p":0,"e":"🧾"},{"d":"Geburtstag","a":"der","r":"عيد الميلاد","l":46,"c":"","p":0,"e":"🎂"},{"d":"Fest","a":"das","r":"العيد / الحفل","l":46,"c":"","p":0,"e":"🎉"},{"d":"Feiertag","a":"der","r":"العطلة الرسمية","l":46,"c":"","p":0,"e":"🎊"},{"d":"Geschenk","a":"das","r":"الهدية","l":46,"c":"","p":0,"e":"🎁"},{"d":"Party","a":"die","r":"الحفلة","l":46,"c":"","p":0,"e":"🥳"},{"d":"Kuchen","a":"der","r":"الكعكة","l":46,"c":"","p":0,"e":"🍰"},{"d":"Kerze","a":"die","r":"الشمعة","l":46,"c":"","p":0,"e":"🕯️"},{"d":"Gast","a":"der","r":"الضيف","l":46,"c":"","p":0,"e":"🙋"}];
+var TITLES={"3":"الأرقام من 0 إلى 100","4":"العائلة","5":"الألوان","6":"الأيام والشهور","8":"الأكل والشرب","9":"أسئلة W وأسئلة نعم / لا","10":"البلدان واللغات والمهن","11":"الضمائر الشخصية","12":"تصريف الأفعال","16":"الاسم والجمع","25":"التاريخ والساعة الرسمية","28":"وصف الأشخاص","30":"الهوايات والوقت الحر","31":"المواد الغذائية والكميات","32":"في المطعم والمقهى","33":"التسوق والأسعار","34":"الملابس والمقاسات","35":"السكن والأثاث","36":"المدينة والمواصلات","38":"المواعيد والدعوات","39":"الطقس والفصول","40":"الجسم والصحة","41":"السفر والعطلة","42":"المدرسة ودورة الألمانية","43":"التواصل والإعلام","44":"البريد والخدمات","45":"النقود والأرقام اليومية","46":"الأعياد وأعياد الميلاد"};
+var KEY='deutsch-vocab-v1';
+var st={boxes:{},best:0};
+try{var s0=JSON.parse(localStorage.getItem(KEY)||'null');if(s0&&s0.boxes){st=s0}}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+var root=document.getElementById('vk'); if(!root||!VOCAB.length)return;
+var G={der:'m',die:'f',das:'n'};
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+function key(w){return w.a+'|'+w.d+'|'+w.r}
+function full(w){return (w.a?w.a+' ':'')+w.d}
+function box(w){return st.boxes[key(w)]||0}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+var canSpeak='speechSynthesis' in window, voices=[], voiceNote=false;
+function loadVoices(){try{voices=speechSynthesis.getVoices()||[]}catch(e){voices=[]}}
+if(canSpeak){loadVoices();try{speechSynthesis.onvoiceschanged=loadVoices}catch(e){}}
+function deVoice(){
+  var d=voices.filter(function(v){return /^de([-_]|$)/i.test(v.lang)});
+  if(!d.length)return null;
+  var good=d.filter(function(v){return /natural|online|google/i.test(v.name)});
+  var list=good.length?good:d;
+  var pref=list.filter(function(v){return /^de[-_]DE$/i.test(v.lang)});
+  return pref[0]||list[0];
+}
+function noteOn(){if(!voiceNote){voiceNote=true;render()}}
+function speak(t){
+  loadVoices();
+  var v=canSpeak?deVoice():null;
+  if(v){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.voice=v;u.lang=v.lang;u.rate=0.85;speechSynthesis.speak(u);return}catch(e){}}
+  try{var a=new Audio('https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=de&q='+encodeURIComponent(t));a.onerror=noteOn;var pr=a.play();if(pr&&pr.catch)pr.catch(noteOn)}catch(e){noteOn()}
+}
+function emo(e){var s=window.EMOJI_SVG&&window.EMOJI_SVG[e];return s?'<img class="vk-emo" alt="" src="data:image/svg+xml,'+encodeURIComponent(s)+'">':esc(e)}
+function pic(w){
+  if(w.k)return '<span class="vk-pic"><i class="vk-sw" style="background:'+w.k+'"></i></span>';
+  var at=' data-sl="'+esc(slug(w))+'"'+(w.a?' data-ph="'+esc(phTitle(w))+'"':'');
+  if(w.n)return '<span class="vk-pic num" dir="ltr">'+esc(w.e)+'</span>';
+  return '<span class="vk-pic"'+at+'>'+(w.e?emo(w.e):'')+'</span>';
+}
+var PQ={'Bank':'Kreditinstitut','Karte':'Bankkarte','Note':'Schulnote','Post':'Deutsche Post','Glas':'Trinkglas','Dose':'Konservendose','Tube':'Tube (Behälter)','Stück':'Kuchenstück','Kurs':'Sprachkurs','Zeit':'Uhr','Reise':'Urlaub','Fest':'Volksfest','Treffen':'Besprechung','Herd':'Elektroherd','Flur':'Diele','Hand':'Hand','Arm':'Arm (Anatomie)','Fuß':'Fuß','Kind':'Kind','Student':'Student','Absender':'Brief','Empfänger':'Brief','Termin':'Terminkalender','Verabredung':'Verabredung'};
+var PH={};try{PH=JSON.parse(localStorage.getItem('deutsch-photo-v1')||'{}')}catch(e){}
+function slug(w){var b=(w.d==='Kurs'&&w.l===45)?'wechselkurs':w.d.split(' (')[0];return b.toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss').replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'')}
+var EXT=['jpg','png','webp','jpeg'];
+function phTitle(w){var b=w.d.split(' (')[0];if(w.d==='Kurs'&&w.l===45)return 'Wechselkurs';return PQ[b]||b}
+function phSave(){try{localStorage.setItem('deutsch-photo-v1',JSON.stringify(PH))}catch(e){}}
+function phPut(el,u){if(!u||!el.isConnected)return;var im=new Image();im.alt='';im.className='vk-photo';im.onload=function(){if(el.isConnected)el.innerHTML='';el.classList.add('has');el.appendChild(im)};im.src=u}
+function local(el,sl,i,miss){
+  if(i>=EXT.length){miss();return}
+  var im=new Image();im.alt='';im.className='vk-photo';
+  im.onload=function(){if(!el.isConnected)return;el.innerHTML='';el.classList.add('has');el.appendChild(im)};
+  im.onerror=function(){local(el,sl,i+1,miss)};
+  im.src='images/vocab/'+sl+'.'+EXT[i]
+}
+function hydrate(){
+  var els=root.querySelectorAll('[data-sl]');
+  Array.prototype.forEach.call(els,function(el){
+    var t=el.getAttribute('data-ph'),sl=el.getAttribute('data-sl');
+    local(el,sl,0,function(){
+      /* لا صورة محلية: تبقى الإيموجي */
+    })
+  })
+}
+var NOTE='<div class="vk-note"><b>لم نجد صوتًا ألمانيًا على جهازك</b><span>لذلك لا يُقرأ النص بنطق ألماني. على Windows: الإعدادات ← الوقت واللغة ← الكلام ← إضافة أصوات ← Deutsch (Deutschland)، ثم أعد فتح المتصفح. في Microsoft Edge تتوفر أصوات ألمانية طبيعية جاهزة.</span></div>';
+var PAGE='games';
+var fx='',lastPc=0,duel=null;
+var mode=PAGE==='games'?'game':'cards', lesson=0, queue=[], cur=null, flipped=false, game=null, match=null, lock=false;
+function pool(){return VOCAB.filter(function(w){return !lesson||w.l===lesson})}
+function nounPool(){return pool().filter(function(w){return w.a&&!w.p})}
+function buildQueue(){queue=shuffle(pool().filter(function(w){return box(w)<2}));cur=queue[0]||null;flipped=false}
+function newGame(){game={q:shuffle(nounPool()).slice(0,10),i:0,score:0,streak:0,ans:null,wrong:[]}}
+function newMatch(){var p=shuffle(pool()).slice(0,6),ix=p.map(function(_,i){return i});match={p:p,L:shuffle(ix),R:shuffle(ix),sel:null,done:[],moves:0,t0:Date.now(),bad:null,end:0};lock=false}
+
+function header(){
+  var total=VOCAB.length,m=VOCAB.filter(function(w){return box(w)>=2}).length,pc=Math.round(m/total*100),from=lastPc;lastPc=pc;
+  var opts='<option value="0">كل الدروس</option>';
+  Object.keys(TITLES).map(Number).sort(function(a,b){return a-b}).forEach(function(n){opts+='<option value="'+n+'"'+(n===lesson?' selected':'')+'>الدرس '+n+' · '+esc(TITLES[n])+'</option>'});
+  var modes=PAGE==='games'?[['game','der · die · das'],['match','مطابقة'],['duel','1 ضد 1']]:[];
+  return (PAGE==='games'?'':'<div class="vk-stats"><div class="vk-line"><span>محفوظة: <b>'+m+'</b> من '+total+'</span><button type="button" class="vk-link" data-act="reset">مسح التقدم</button></div><div class="vk-bar"><i style="width:'+pc+'%;--from:'+from+'%"></i></div></div>')+
+   (modes.length?'<div class="vk-modes">'+modes.map(function(x){return '<button type="button" data-mode="'+x[0]+'" aria-pressed="'+(mode===x[0])+'">'+x[1]+'</button>'}).join('')+'</div>':'')+
+   '<label class="vk-filter"><span>الاختيار</span><select id="vkLesson">'+opts+'</select><small>'+pool().length+' كلمة</small></label>';
+}
+function viewCards(){
+  if(!queue.length)return '<div class="vk-empty"><b>أنهيت كل بطاقات هذا الاختيار.</b><span>جرب درسًا آخر أو ابدأ دورة جديدة.</span><button type="button" class="vk-btn good" data-act="restart">دورة جديدة</button></div>';
+  var w=cur,g=w.a?G[w.a]:'';
+  return '<div class="vk-count">المتبقية: '+queue.length+'</div>'+
+   '<button type="button" class="vk-card '+g+'" data-act="flip">'+
+   pic(w)+(flipped?'<span class="vk-ar">'+esc(w.r)+'</span>':'<span class="vk-art">'+esc(w.a||w.c||'')+'</span><span class="vk-de" dir="ltr">'+esc(w.d)+'</span>')+
+   '<span class="vk-hint">'+(flipped?'اضغط للرجوع':'اضغط لرؤية المعنى')+'</span></button>'+
+   '<div class="vk-row">'+'<button type="button" class="vk-btn ghost" data-act="speak">استمع</button>'+
+   '<button type="button" class="vk-btn bad" data-act="again">لم أحفظها</button><button type="button" class="vk-btn good" data-act="known">حفظتها</button></div>';
+}
+function viewGame(){
+  if(nounPool().length<3)return '<div class="vk-empty"><b>هذا الاختيار فيه أسماء قليلة.</b><span>اختر "كل الدروس" لتلعب.</span></div>';
+  if(!game)newGame();
+  if(game.i>=game.q.length){
+    var h='<div class="vk-end"><b>النتيجة: '+game.score+' من '+game.q.length+'</b><span>أفضل سلسلة صحيحة: '+st.best+'</span></div>';
+    if(game.wrong.length){h+='<h3>راجع هذه الكلمات</h3><div class="vk-list">'+game.wrong.map(function(w){return '<div class="vk-li '+G[w.a]+'"><b dir="ltr">'+esc(full(w))+'</b><small>'+esc(w.r)+'</small></div>'}).join('')+'</div>'}
+    return h+'<div class="vk-row"><button type="button" class="vk-btn good" data-act="newgame">جولة جديدة</button></div>';
+  }
+  var w=game.q[game.i],a=game.ans;
+  var b=['der','die','das'].map(function(x){
+    var c='vk-art-btn '+G[x];if(a!==null){if(x===w.a)c+=' right';else if(x===a)c+=' wrong'}
+    return '<button type="button" class="'+c+'" data-art="'+x+'"'+(a!==null?' disabled':'')+'>'+x+'</button>'}).join('');
+  var fb=a===null?'':(a===w.a?'<p class="vk-fb ok">صحيح: '+esc(full(w))+'</p>':'<p class="vk-fb no">الجواب: '+esc(full(w))+'</p>');
+  return '<div class="vk-count">السؤال '+(game.i+1)+' من '+game.q.length+' · سلسلة: '+game.streak+'</div>'+
+   '<div class="vk-q">'+pic(w)+'<span class="vk-ar">'+esc(w.r)+'</span><span class="vk-de" dir="ltr"><i>?</i> '+esc(w.d)+'</span></div>'+
+   '<div class="vk-arts">'+b+'</div>'+fb+
+   (a!==null?'<div class="vk-row"><button type="button" class="vk-btn good" data-act="next">التالي</button></div>':'');
+}
+function viewMatch(){
+  if(pool().length<2)return '<div class="vk-empty"><b>هذا الاختيار فيه كلمات قليلة.</b></div>';
+  if(!match)newMatch();
+  var m=match,total=m.p.length;
+  function cell(side,i){
+    var w=m.p[i],isDone=m.done.indexOf(i)>-1,c='vk-cell';
+    if(isDone)c+=' done';
+    if(m.sel&&m.sel.side===side&&m.sel.i===i)c+=' sel';
+    if(m.bad&&((m.bad.a.side===side&&m.bad.a.i===i)||(m.bad.b.side===side&&m.bad.b.i===i)))c+=' bad';
+    return '<button type="button" class="'+c+(side==='l'?' de':'')+'" data-side="'+side+'" data-i="'+i+'"'+(isDone?' disabled':'')+(side==='l'?' dir="ltr"':'')+'>'+esc(side==='l'?full(w):w.r)+'</button>'}
+  var h='<div class="vk-count">محاولات: '+m.moves+' · مطابقة: '+m.done.length+' من '+total+'</div><div class="vk-board"><div>'+m.L.map(function(i){return cell('l',i)}).join('')+'</div><div>'+m.R.map(function(i){return cell('r',i)}).join('')+'</div></div>';
+  if(m.done.length===total){if(!m.end)m.end=Math.round((Date.now()-m.t0)/1000);h+='<div class="vk-end"><b>أحسنت. أنهيتها في '+m.end+' ثانية</b><span>'+m.moves+' محاولة</span></div><div class="vk-row"><button type="button" class="vk-btn good" data-act="newmatch">جولة جديدة</button></div>'}
+  return h;
+}
+
+function opts4(w,list){var o=shuffle(list.filter(function(x){return x!==w&&full(x)!==full(w)})).slice(0,3);o.push(w);return shuffle(o)}
+function newDuel(){
+  var all=pool(),nn=nounPool(),pw=all.filter(function(w){return w.a&&w.e&&!w.n&&!w.p});
+  var q=[],i,N=12;
+  for(i=0;i<N;i++){
+    var useWhat=pw.length>=4&&(nn.length<3||Math.random()<.5);
+    if(useWhat){var w=pw[Math.floor(Math.random()*pw.length)];q.push({t:'what',w:w,o:opts4(w,pw)})}
+    else if(nn.length>=3){q.push({t:'art',w:nn[Math.floor(Math.random()*nn.length)]})}
+  }
+  duel={q:q,i:0,turn:0,s:[0,0],ans:null}
+}
+function viewDuel(){
+  if(pool().length<4)return '<div class="vk-empty"><b>هذا الاختيار فيه كلمات قليلة.</b><span>اختر "كل الدروس".</span></div>';
+  if(!duel)newDuel();
+  var d=duel,names=['اللاعب 1','اللاعب 2'];
+  var board='<div class="vk-vs"><div class="vk-p p0'+(d.turn===0&&d.i<d.q.length?' on':'')+'"><span>'+names[0]+'</span><b>'+d.s[0]+'</b></div><div class="vk-p p1'+(d.turn===1&&d.i<d.q.length?' on':'')+'"><span>'+names[1]+'</span><b>'+d.s[1]+'</b></div></div>';
+  if(d.i>=d.q.length){
+    var r=d.s[0]===d.s[1]?'تعادل!':'الفائز: '+(d.s[0]>d.s[1]?names[0]:names[1]);
+    return board+'<div class="vk-end"><b>'+r+'</b><span>'+d.s[0]+' – '+d.s[1]+'</span></div><div class="vk-row"><button type="button" class="vk-btn good" data-act="newduel">جولة جديدة</button></div>'}
+  var Q=d.q[d.i],w=Q.w,a=d.ans,body;
+  var who='<div class="vk-count">السؤال '+(d.i+1)+' من '+d.q.length+' · دور <b class="p'+d.turn+'">'+names[d.turn]+'</b></div>';
+  if(Q.t==='art'){
+    var b=['der','die','das'].map(function(x){
+      var c='vk-art-btn '+G[x];if(a!==null){if(x===w.a)c+=' right';else if(x===a)c+=' wrong'}
+      return '<button type="button" class="'+c+'" data-dart="'+x+'"'+(a!==null?' disabled':'')+'>'+x+'</button>'}).join('');
+    body='<div class="vk-q"><span class="vk-art">der · die · das ؟</span>'+pic(w)+'<span class="vk-ar">'+esc(w.r)+'</span><span class="vk-de" dir="ltr"><i>?</i> '+esc(w.d)+'</span></div><div class="vk-arts">'+b+'</div>';
+  }else{
+    var ob=Q.o.map(function(x,ix){
+      var c='vk-opt';if(a!==null){if(x===w)c+=' right';else if(ix===a)c+=' wrong'}
+      return '<button type="button" class="'+c+'" dir="ltr" data-dopt="'+ix+'"'+(a!==null?' disabled':'')+'>'+esc(full(x))+'</button>'}).join('');
+    body='<div class="vk-q"><span class="vk-art">ما هذا؟ · Was ist das?</span>'+pic(w)+'</div><div class="vk-opts">'+ob+'</div>';
+  }
+  var ok=a!==null&&(Q.t==='art'?a===w.a:Q.o[a]===w);
+  var fb=a===null?'':(ok?'<p class="vk-fb ok">صحيح! +1 · '+esc(full(w))+' = '+esc(w.r)+'</p>':'<p class="vk-fb no">الجواب: '+esc(full(w))+' = '+esc(w.r)+'</p>');
+  return board+who+body+fb+(a!==null?'<div class="vk-row"><button type="button" class="vk-btn good" data-act="dnext">التالي</button></div>':'');
+}
+function dAnswer(val){
+  var d=duel,Q=d.q[d.i];if(!d||d.ans!==null||!Q)return;
+  d.ans=val;var ok=Q.t==='art'?val===Q.w.a:Q.o[val]===Q.w;
+  if(ok)d.s[d.turn]++;speak(full(Q.w));fx=ok?'ok':'no';render()
+}
+function render(){root.innerHTML=header()+(voiceNote?NOTE:'')+'<div class="vk-body'+(fx?' fx-'+fx:'')+'">'+(mode==='cards'?viewCards():mode==='game'?viewGame():mode==='duel'?viewDuel():viewMatch())+'</div>';fx='';hydrate()}
+function next(){cur=queue[0]||null;flipped=false;fx='in';render()}
+
+root.addEventListener('change',function(e){
+  if(e.target.id==='vkLesson'){lesson=+e.target.value;buildQueue();game=null;match=null;duel=null;render()}
+});
+root.addEventListener('click',function(e){
+  var t=e.target.closest('[data-mode],[data-act],[data-art],[data-side],[data-dart],[data-dopt]');if(!t)return;
+  if(t.dataset.mode){mode=t.dataset.mode;fx='in';render();return}
+  if(t.dataset.dart){dAnswer(t.dataset.dart);return}
+  if(t.dataset.dopt){dAnswer(+t.dataset.dopt);return}
+  if(t.dataset.art){
+    if(!game||game.ans!==null)return;var w=game.q[game.i];game.ans=t.dataset.art;speak(full(w));
+    if(game.ans===w.a){game.score++;game.streak++;if(game.streak>st.best){st.best=game.streak;save()}}else{game.streak=0;game.wrong.push(w)}
+    fx=game.ans===w.a?'ok':'no';render();return}
+  if(t.dataset.side){
+    if(lock||!match)return;var side=t.dataset.side,i=+t.dataset.i,m=match;
+    if(m.done.indexOf(i)>-1)return;
+    if(!m.sel||m.sel.side===side){m.sel={side:side,i:i};render();return}
+    m.moves++;
+    if(m.sel.i===i){m.done.push(i);m.sel=null;fx='ok';render()}
+    else{m.bad={a:m.sel,b:{side:side,i:i}};lock=true;fx='no';render();setTimeout(function(){m.bad=null;m.sel=null;lock=false;render()},600)}
+    return}
+  var a=t.dataset.act;
+  if(a==='flip'){flipped=!flipped;fx='flip';render()}
+  else if(a==='speak'){if(cur)speak(full(cur))}
+  else if(a==='known'&&cur){var k=key(cur);st.boxes[k]=2;save();queue.shift();next()}
+  else if(a==='again'&&cur){st.boxes[key(cur)]=0;save();queue.shift();queue.splice(Math.min(3,queue.length),0,cur);next()}
+  else if(a==='restart'){pool().forEach(function(w){delete st.boxes[key(w)]});save();buildQueue();render()}
+  else if(a==='reset'){if(window.confirm('مسح كل تقدمك في المفردات؟')){st.boxes={};save();buildQueue();render()}}
+  else if(a==='newgame'){newGame();fx='in';render()}
+  else if(a==='next'){game.i++;game.ans=null;fx='in';render()}
+  else if(a==='dnext'){duel.i++;duel.turn=1-duel.turn;duel.ans=null;fx='in';render()}
+  else if(a==='newduel'){newDuel();fx='in';render()}
+  else if(a==='newmatch'){newMatch();fx='in';render()}
+});
+buildQueue();render();
+})();
+</script>
+</body>
+</html>
