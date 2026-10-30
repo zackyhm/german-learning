@@ -570,3 +570,48 @@ nav a.active { background: var(--noir); color: var(--or); }
 /* حجم ثابت للصورة: نسبة 3:2 */
 .vk-pic.has, .vk-pic.has { width: 100%; max-width: 480px; height: auto; aspect-ratio: 3 / 2; }
 @media (min-width: 600px) { .vk-pic.has { height: auto; } }
+
+/* وضع 1 ضد 1 */
+.vk-modes { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 520px) {
+  .vk-modes { grid-template-columns: repeat(2, 1fr); }
+  .vk-modes button:nth-child(3) { border-inline-start: 0; }
+  .vk-modes button:nth-child(n+3) { border-top: 1px solid var(--noir); }
+}
+.vk-vs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.vk-p { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: var(--blanc); border: 2px solid var(--noir); opacity: .55; transition: opacity .15s, transform .15s, background .15s; }
+.vk-p b { font-size: 1.8rem; }
+.vk-p.on { opacity: 1; transform: scale(1.03); box-shadow: var(--vk-sh); }
+.vk-p.p0.on { background: var(--or); }
+.vk-p.p1.on { background: var(--rouge); color: var(--blanc); }
+.vk-count b.p0 { background: var(--or); padding: 0 8px; }
+.vk-count b.p1 { background: var(--rouge); color: var(--blanc); padding: 0 8px; }
+.vk-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; direction: ltr; }
+.vk-opt { font: inherit; font-weight: 800; font-size: 1.1rem; padding: 16px 8px; background: var(--blanc); color: var(--noir); border: 3px solid var(--noir); box-shadow: 4px 4px 0 rgba(0,0,0,.35); cursor: pointer; overflow-wrap: anywhere; transition: transform .1s, box-shadow .1s, opacity .15s; }
+.vk-opt:not(:disabled):hover { transform: translateY(-3px); background: var(--or); }
+.vk-opt:not(:disabled):active { transform: translateY(2px) scale(.96); box-shadow: 0 0 0; }
+.vk-opt:disabled { cursor: default; opacity: .4; }
+.vk-opt.right { opacity: 1; background: #1D7448; border-color: #1D7448; color: var(--blanc); animation: vkPulse .5s ease-out; }
+.vk-opt.wrong { opacity: 1; background: var(--rouge); border-color: var(--rouge); color: var(--blanc); text-decoration: line-through; }
+.fx-in .vk-opt { animation: vkPop .22s var(--vk-ease) both; }
+
+/* ===== الصفحة الرئيسية ===== */
+.home-lead { margin: 4px 0 20px; font-size: 1.1rem; color: var(--noir); }
+.home-grid { display: grid; gap: 16px; }
+.home-card { display: grid; grid-template-columns: 96px 1fr; grid-template-areas: "i t" "i d" "i n"; column-gap: 16px; align-items: center; padding: 18px; text-decoration: none; color: var(--noir); background: var(--blanc); border: 2px solid var(--noir); border-top: 10px solid var(--noir); box-shadow: 5px 5px 0 var(--noir); transition: transform .12s, box-shadow .12s; animation: vkUp .3s ease-out both; }
+.home-card.b { border-top-color: var(--rouge); animation-delay: .06s; }
+.home-card.c { border-top-color: var(--or); animation-delay: .12s; }
+.home-card:hover { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 var(--noir); }
+.home-card:active { transform: translate(3px,3px); box-shadow: 1px 1px 0 var(--noir); }
+.home-card img { grid-area: i; width: 96px; height: 96px; }
+.home-t { grid-area: t; font-size: 1.6rem; font-weight: 800; }
+.home-d { grid-area: d; color: #444; }
+.home-n { grid-area: n; justify-self: start; margin-top: 6px; padding: 2px 10px; font-weight: 700; background: var(--or); border: 2px solid var(--noir); }
+@media (min-width: 700px) { .home-grid { grid-template-columns: repeat(3, 1fr); } .home-card { grid-template-columns: 1fr; grid-template-areas: "i" "t" "d" "n"; text-align: center; } .home-card img { margin: 0 auto 8px; width: 120px; height: 120px; } .home-n { justify-self: center; } }
+nav a { transition: background .12s; }
+
+/* صور Noto داخل بلاطة */
+.vk-pic:has(> .vk-emo) { width: 210px; height: 210px; margin: 0 auto 8px; padding: 18px; background: radial-gradient(circle at 50% 40%, #fff 0, #f3f0e4 100%); border: 2px solid var(--noir); box-shadow: 4px 4px 0 rgba(0,0,0,.25); }
+.vk-emo { display: block; width: 100%; height: 100%; }
+.vk-modes { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 1fr; }
+@media (max-width: 520px) { .vk-modes { grid-template-columns: none; } .vk-modes button:nth-child(3) { border-inline-start: 1px solid var(--noir); } .vk-modes button:nth-child(n+3) { border-top: 0; } }
